@@ -5,7 +5,6 @@ namespace culs_library
 {
     public class NetworkInterfaceControllerIPV4PropertyConfigurator
     {
-
         public static void SetStaticIPV4LocalAddress(String interfaceName, String ip, String mask, String gateway)
         {
             ExecuteCommand("/c netsh interface ip set address \"" + interfaceName + "\" static " + ip + " " + mask + " " + gateway);
